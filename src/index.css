@@ -1,0 +1,28 @@
+body, * {
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@font-face {
+  src: url("./assets/fonts/OldStandardTT-Regular.ttf");
+  font-family: "OldStandard";
+  src: url("./assets/fonts/OldStandardTT-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  src: url("./assets/fonts/Raleway-Regular.ttf");
+  font-family: "Raleway";
+  src: url("./assets/fonts/Raleway-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
