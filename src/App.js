@@ -1,37 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { Container, FullContainer } from './styles/layouts';
 
 import Hero from './components/Hero';
 import Bio from './components/Bio';
-import { FullContainer } from './styles/layouts';
+import Skills from './components/Skills';
 
 export const App = () => (
   <>
-    <FullContainer background={'dark'} >
+    <FullContainer background="dark">
       <Hero />
     </FullContainer>
 
-    <FullContainer background={'light'}>
+    <Container background="light">
       <Bio />
-    </FullContainer>
+    </Container>
 
-    <FullContainer>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-      </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </FullContainer>
+    <Container background="dark">
+      <Skills />
+    </Container>
   </>
 );
 

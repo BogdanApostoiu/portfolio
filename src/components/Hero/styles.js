@@ -1,12 +1,12 @@
-import styled from 'styled-components';
-import { COLORS } from '../../styles/variables';
+import styled from "styled-components";
+import { COLORS } from "../../styles/variables";
 import {
   SwirlAnimation,
   FadeInSlideDownAnimation,
   TextShadowAnimation,
-  RollOutTextAnimation
-} from '../../styles/animations';
-import { H1, H3 } from '../../styles/typography';
+  RollOutTextAnimation,
+} from "../../styles/animations";
+import { H1, H3 } from "../../styles/typography";
 
 export const Wrapper = styled.div`
   width: 80%;
@@ -18,15 +18,13 @@ export const Wrapper = styled.div`
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  /* z-index: 2; */
 `;
-
 
 export const Photo = styled.div`
   width: 200px;
   height: 200px;
   overflow: hidden;
-  border-radius: 100%;    
+  border-radius: 100%;
   align-self: center;
   margin-right: 15px;
   ${SwirlAnimation};
@@ -47,8 +45,8 @@ export const Heading = styled(H1)`
 `;
 
 export const SubHeading = styled(H3)`
-  border-top: 1px solid rgba(255, 255, 255, .3);
-  border-bottom: 1px solid rgba(255, 255, 255, .3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   padding: 4px;
   margin: 0;
   text-align: center;
@@ -57,7 +55,7 @@ export const SubHeading = styled(H3)`
   flex-direction: row;
   justify-content: space-evenly;
   :after {
-    content: '';
+    content: "";
     height: 31px;
     overflow: hidden;
     width: 100%;
@@ -78,6 +76,5 @@ export const Name = styled.span`
   display: inline-block;
   ${TextShadowAnimation};
 `;
-
 
 export default Wrapper;
