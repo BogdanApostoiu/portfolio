@@ -50,7 +50,7 @@ export const CenteredSection = styled.section`
   justify-content: space-around;
 `;
 
-export const Separator = styled.div`
+export const SectionSeparator = styled.div`
   width: 100%;
   height: 100px;
   position: absolute;

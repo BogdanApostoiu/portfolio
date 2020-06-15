@@ -9,6 +9,8 @@ import {
   IconWrapper,
   IconTooltip,
 } from './styles';
+import { SectionSeparator } from '../../styles/layouts';
+
 import js from '../../assets/icons/javascript.svg';
 import html from '../../assets/icons/html5.svg';
 import css from '../../assets/icons/css3.svg';
@@ -43,58 +45,60 @@ export const Skills = () => (
       <Heading>The Mandatory</Heading>
       <Separator />
       <RowContent>
-        <Badge src={js} alt="javascript" />
-        <Badge src={html} alt="html5" />
-        <Badge src={css} alt="css3" />
+        <Badge src={js} alt="JavaScript" />
+        <Badge src={html} alt="HTML 5" />
+        <Badge src={css} alt="CSS 3" />
       </RowContent>
     </Row>
     <Row>
       <Heading>Client Side</Heading>
       <Separator />
       <RowContent>
-        <Badge src={reactjs} alt="reactjs" />
-        <Badge src={vuejs} alt="vuejs" />
-        <Badge src={angularjs} alt="angularjs" />
-        <Badge src={redux} alt="redux" />
+        <Badge src={reactjs} alt="React.js" />
+        <Badge src={vuejs} alt="VueJS" />
+        <Badge src={angularjs} alt="AngularJS" />
+        <Badge src={redux} alt="Redux" />
       </RowContent>
     </Row>
     <Row>
       <Heading>Server Side</Heading>
       <Separator />
       <RowContent>
-        <Badge src={nodejs} alt="nodejs" />
-        <Badge src={expressjs} alt="expressjs" />
+        <Badge src={nodejs} alt="Node.js" />
+        <Badge src={expressjs} alt="ExpressJS" />
       </RowContent>
     </Row>
     <Row>
       <Heading>Serverless</Heading>
       <Separator />
       <RowContent>
-        <Badge src={firebase} alt="firebase" />
-        <Badge src={netlify} alt="netlify" />
-        <Badge src={amazons3} alt="amazons3" />
+        <Badge src={firebase} alt="Firebase" />
+        <Badge src={netlify} alt="Netlify" />
+        <Badge src={amazons3} alt="Amazon S3" />
       </RowContent>
     </Row>
     <Row>
       <Heading>Have Tinkered with</Heading>
       <Separator />
       <RowContent>
-        <Badge src={gql} alt="gql" />
-        <Badge src={contentful} alt="contentful" />
+        <Badge src={gql} alt="GraphQL" />
+        <Badge src={contentful} alt="Contentful" />
       </RowContent>
     </Row>
     <Row>
       <Heading>Tools</Heading>
       <Separator />
       <RowContent>
-        <Badge src={vscode} alt="vscode" />
-        <Badge src={npm} alt="npm" />
-        <Badge src={git} alt="git" />
-        <Badge src={github} alt="github" />
-        <Badge src={jira} alt="jira" />
-        <Badge src={slack} alt="slack" />
+        <Badge src={vscode} alt="VSCode" />
+        <Badge src={npm} alt="NPM" />
+        <Badge src={git} alt="Git" />
+        <Badge src={github} alt="GitHub" />
+        <Badge src={jira} alt="Jira" />
+        <Badge src={slack} alt="Slack" />
       </RowContent>
     </Row>
+
+    <SectionSeparator />
   </Wrapper>
 );
 

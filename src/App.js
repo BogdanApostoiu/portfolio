@@ -5,6 +5,7 @@ import { Container, FullContainer } from './styles/layouts';
 import Hero from './components/Hero';
 import Bio from './components/Bio';
 import Skills from './components/Skills';
+import Contact from './components/Contact';
 
 export const App = () => (
   <>
@@ -18,6 +19,10 @@ export const App = () => (
 
     <Container background="dark">
       <Skills />
+    </Container>
+
+    <Container background="light">
+      <Contact />
     </Container>
   </>
 );

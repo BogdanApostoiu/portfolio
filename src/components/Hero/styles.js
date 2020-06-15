@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import { COLORS } from "../../styles/variables";
+import styled from 'styled-components';
+import { COLORS } from '../../styles/variables';
 import {
   SwirlAnimation,
   FadeInSlideDownAnimation,
   TextShadowAnimation,
   RollOutTextAnimation,
-} from "../../styles/animations";
-import { H1, H3 } from "../../styles/typography";
+} from '../../styles/animations';
+import { H1, H3 } from '../../styles/typography';
 
 export const Wrapper = styled.div`
   width: 80%;

@@ -1,7 +1,9 @@
-import React from "react";
-import Poster from "../../assets/me.png";
-import { Wrapper, Photo, Text, Name, Heading, SubHeading } from "./styles";
-import { Separator } from "../../styles/layouts";
+import React from 'react';
+import Poster from '../../assets/me.png';
+import {
+  Wrapper, Photo, Text, Name, Heading, SubHeading,
+} from './styles';
+import { SectionSeparator as Separator } from '../../styles/layouts';
 
 export const Hero = () => (
   <>
@@ -11,7 +13,7 @@ export const Hero = () => (
       </Photo>
       <Text>
         <Heading>
-          hi, <br /> i'm <Name>BOGDAN</Name>
+          hi, <br /> I&apos;m <Name>BOGDAN</Name>
         </Heading>
         <SubHeading>
           <span>Web Developer</span>
