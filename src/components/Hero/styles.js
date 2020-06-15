@@ -76,7 +76,7 @@ export const Name = styled.span`
   display: inline-block;
   ${TextShadowAnimation};
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     padding: 40px 0;
   }
 `;

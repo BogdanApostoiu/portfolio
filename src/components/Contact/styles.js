@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   flex-flow: column nowrap;
   align-items: center;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     width: 90%;
   }
 `;
