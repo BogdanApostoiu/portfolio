@@ -5,17 +5,17 @@ import {
 } from './styles';
 import { SectionSeparator as Separator } from '../../styles/layouts';
 
-export const Hero = () => (
+export const Hero = ({ animate }) => (
   <>
     <Wrapper>
-      <Photo>
+      <Photo animate={animate}>
         <img src={Poster} alt="me" />
       </Photo>
       <Text>
-        <Heading>
+        <Heading animate={animate}>
           hi, <br /> I&apos;m <Name>BOGDAN</Name>
         </Heading>
-        <SubHeading>
+        <SubHeading animate={animate}>
           <span>Web Developer</span>
           <span>▫</span>
           <span>UI/UX</span>

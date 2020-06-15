@@ -1,30 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Container, FullContainer } from './styles/layouts';
+import { LoadingScreen } from './styles/components';
 
 import Hero from './components/Hero';
 import Bio from './components/Bio';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 
-export const App = () => (
-  <>
-    <FullContainer background="dark">
-      <Hero />
-    </FullContainer>
+const cs = (bool) => (bool
+  ? {
+    overflow: 'hidden',
+    height: '100%',
+    width: '100%',
+    position: 'absolute',
+  }
+  : {});
 
-    <Container background="light">
-      <Bio />
-    </Container>
+export const App = () => {
+  const [loading, setLoading] = useState(true);
 
-    <Container background="dark">
-      <Skills />
-    </Container>
+  return (
+    <div style={cs(loading)}>
+      {loading && <LoadingScreen end={() => setLoading(false)} />}
+      <FullContainer background="dark">
+        <Hero animate={!loading} />
+      </FullContainer>
 
-    <Container background="light">
-      <Contact />
-    </Container>
-  </>
-);
+      <Container background="light">
+        <Bio />
+      </Container>
+
+      <Container background="dark">
+        <Skills />
+      </Container>
+
+      <Container background="light">
+        <Contact />
+      </Container>
+    </div>
+  );
+};
 
 export default App;

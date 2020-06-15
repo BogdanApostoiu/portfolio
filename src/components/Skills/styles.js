@@ -45,6 +45,11 @@ export const Icon = styled.img`
   height: 100px;
   padding: 10px;
   transition: all 600ms ease-in-out;
+
+  @media (max-width: 400px) {
+    width: 60px;
+    height: 60px;
+  }
 `;
 
 export const IconTooltip = styled.span`

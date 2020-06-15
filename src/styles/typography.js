@@ -30,6 +30,10 @@ export const P = styled.p`
   font-family: 'Raleway';
   font-size: 18px;
   margin-bottom: 15px;
+  ${({ centered }) => centered
+    && css`
+      text-align: center;
+    `}
 `;
 
 export const Highlighted = styled.span`

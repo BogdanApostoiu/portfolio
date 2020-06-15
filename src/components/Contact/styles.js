@@ -6,6 +6,10 @@ export const Wrapper = styled.div`
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+
+  @media (max-width: 400px) {
+    width: 90%;
+  }
 `;
 
 export const Text = styled.div`

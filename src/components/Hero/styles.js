@@ -27,7 +27,7 @@ export const Photo = styled.div`
   border-radius: 100%;
   align-self: center;
   margin-right: 15px;
-  ${SwirlAnimation};
+  ${({ animate }) => animate && SwirlAnimation};
   img {
     height: 100%;
     width: 100%;
@@ -41,7 +41,7 @@ export const Text = styled.div`
 `;
 
 export const Heading = styled(H1)`
-  ${FadeInSlideDownAnimation}
+  ${({ animate }) => animate && FadeInSlideDownAnimation}
 `;
 
 export const SubHeading = styled(H3)`
@@ -55,26 +55,30 @@ export const SubHeading = styled(H3)`
   flex-direction: row;
   justify-content: space-evenly;
   :after {
-    content: "";
-    height: 31px;
+    content: '';
+    height: 35px;
     overflow: hidden;
     width: 100%;
     position: absolute;
-    top: -1px;
+    top: -3px;
     right: 0;
     background: ${COLORS.grey};
-    ${RollOutTextAnimation};
+    ${({ animate }) => animate && RollOutTextAnimation};
   }
 `;
 
 export const Name = styled.span`
   color: ${COLORS.orange};
-  font-family: "Raleway";
+  font-family: 'Raleway';
   line-height: 0px;
   font-weight: bold;
   font-size: 80px;
   display: inline-block;
   ${TextShadowAnimation};
+
+  @media (max-width: 400px) {
+    padding: 40px 0;
+  }
 `;
 
 export default Wrapper;
